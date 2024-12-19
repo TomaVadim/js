@@ -1,5 +1,5 @@
 {
   "projects": {
-    "dev": "AppTest"
+    "default": "fir-js-7fcb0"
   }
 }
