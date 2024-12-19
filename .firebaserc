@@ -1,8 +1,18 @@
 {
   "projects": {
-    "default": "your-project-id",
-    "dev": "your-dev-project-id"
+    "default": "dev"
   },
-  "targets": {},
+  "targets": {
+    "dev": {
+      "hosting": {
+        "my-site": [
+          "js"
+        ],
+        "js": [
+          "https://fir-js-7fcb0.web.app/"
+        ]
+      }
+    }
+  },
   "etags": {}
 }
