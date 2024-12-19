@@ -5,6 +5,8 @@ import "./App.css";
 import { motion, useScroll } from "framer-motion";
 import { css } from "@emotion/css";
 
+const url = import.meta.env.VITE_URL;
+
 interface Area {
   item: string;
   isCompleted?: boolean;
@@ -92,6 +94,9 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <h2>
+        Environment Variable <strong>{url || "No defined variable"}</strong>
+      </h2>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
